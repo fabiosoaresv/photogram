@@ -7,8 +7,8 @@ Make download from these projects and enjoy! :)
 
 ### How to run
 - Dependencies
-> yarn
-> node
++ `yarn`
++ `node`
 
 - Clone the project Server
 `$ git clone https://github.com/fabiosoaresv/photogram.git`
