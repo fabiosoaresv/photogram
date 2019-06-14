@@ -1,15 +1,16 @@
-### Photogram
+# Photogram
 This project is based in Instagram, I'm use technology NodeJS to development this.
 
-To test the end-to-end software, you need to download the Project Client too, this is available at [photogram_app](http://github.com/fabiosoaresv/photogram_app).                      
+To test the end-to-end software, you need to download the Project Client too, this is available at [photogram_app](http://github.com/fabiosoaresv/photogram_app).
 
 Make download from these projects and enjoy! :)
 
-### How to run
-- Dependencies
-+ `yarn`
-+ `node`
+# How to run
+### Dependencies
+- `yarn`
+- `node`
 
+### Start
 - Clone the project Server
 `$ git clone https://github.com/fabiosoaresv/photogram.git`
 
@@ -18,12 +19,12 @@ Make download from these projects and enjoy! :)
 - Start development server
 `$ yarn dev`
 
-### Created by
+# Created by
 * Fabio Soares @ 06/12/2019 / Updated last @ 14/06/2019,
 * fabiosoares@outlook.com.br
 * Teaching by: [@Rocketseat](https://github.com/Rocketseat)
 
-### Features
+# Features
 * Built project to support photo upload.
 * Created the route for uploading photos.
 * Created the route for the like of photos.
