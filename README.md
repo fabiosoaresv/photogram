@@ -19,11 +19,6 @@ Make download from these projects and enjoy! :)
 - Start development server
 `$ yarn dev`
 
-# Created by
-* Fabio Soares @ 06/12/2019 / Updated last @ 14/06/2019,
-* fabiosoares@outlook.com.br
-* Teaching by: [@Rocketseat](https://github.com/Rocketseat)
-
 # Features
 * Built project to support photo upload.
 * Created the route for uploading photos.
@@ -34,3 +29,8 @@ Make download from these projects and enjoy! :)
 * Created API to give like in photos.
 * Resizing the photos for the application for not stay slow.
 * Configured websocket for real time photo refresh.
+
+# Created by
+* Fabio Soares @ 06/12/2019 / Updated last @ 14/06/2019
+* fabiosoares@outlook.com.br
+* Teaching by: [@Rocketseat](https://github.com/Rocketseat)
