@@ -3,7 +3,7 @@
   "version": "1.0.0",
     "engines": {
       "node": "12.4.0"
-    }
+    },
   "main": "index.js",
   "repository": "https://github.com/fabiosoaresv/photogram.git",
   "author": "Fabio Soares <fabiosoares@outlook.com.br>",
