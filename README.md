@@ -31,6 +31,6 @@ Make download from these projects and enjoy! :)
 * Configured websocket for real time photo refresh.
 
 # Created by
-* Fabio Soares @ 06/12/2019 / Updated last @ 14/06/2019
+* Fabio Soares @ 06/12/2019 / Updated last @ 06/14/2019
 * fabiosoares@outlook.com.br
 * Teaching by: [@Rocketseat](https://github.com/Rocketseat)
