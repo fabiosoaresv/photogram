@@ -6,7 +6,7 @@
   const app = express();
 
   const corsOptions = {
-    origin: 'https://ph0togram.herokuapp.com',
+    origin: 'https://ph0togram-api.herokuapp.com',
     optionsSuccessStatus: 200
 }
 
