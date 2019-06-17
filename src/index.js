@@ -5,7 +5,7 @@
 
   const app = express();
 
-  const server = require('http').Server(app);
+  const server = require('https').Server(app);
   const io = require('socket.io')(server);
 
   mongoose.connect('mongodb+srv://pyhooma:pyhooma@cluster0-srqgg.mongodb.net/test?retryWrites=true&w=majority', {
