@@ -36,7 +36,14 @@ var corsOptions = {
 
   app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads', 'resized')));
 
-  app.use(require('./routes'));
+  //app.use(require('./routes'));
+
+  app.use(function(req, res, next) {
+    require('./routes');
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+  });
 
   server.listen(443);
 
