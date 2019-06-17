@@ -5,9 +5,18 @@
 
   const app = express();
 
-  const corsOptions = {
-    origin: 'https://ph0togram-api.herokuapp.com',
-    optionsSuccessStatus: 200
+
+var whitelist = ['https://ph0togram-api.herokuapp.com', 'https://ph0togram.herokuapp.com', '177.8.54.132']
+
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+      optionsSuccessStatus: 200
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
 }
 
   const server = require('https').Server(app);
