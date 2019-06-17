@@ -5,6 +5,11 @@
 
   const app = express();
 
+  const corsOptions = {
+    origin: 'https://ph0togram.herokuapp.com',
+    optionsSuccessStatus: 200
+}
+
   const server = require('https').Server(app);
   const io = require('socket.io')(server);
 
@@ -18,7 +23,7 @@
     next();
   })
 
-  app.use(cors());
+  app.use(cors(corsOptions));
 
   app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads', 'resized')));
 
