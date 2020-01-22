@@ -5,7 +5,21 @@
 
   const app = express();
 
-  const server = require('http').Server(app);
+
+var whitelist = ['https://ph0togram-api.herokuapp.com', 'https://ph0togram.herokuapp.com', '177.8.54.132']
+
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+      optionsSuccessStatus: 200
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+  const server = require('https').Server(app);
   const io = require('socket.io')(server);
 
   mongoose.connect('mongodb+srv://pyhooma:pyhooma@cluster0-srqgg.mongodb.net/test?retryWrites=true&w=majority', {
@@ -18,11 +32,18 @@
     next();
   })
 
-  app.use(cors());
+  app.use(cors(corsOptions));
 
   app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads', 'resized')));
 
-  app.use(require('./routes'));
+  //app.use(require('./routes'));
 
-  server.listen(3333);
+  app.use(function(req, res, next) {
+    require('./routes');
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+  });
+
+  server.listen(443);
 
